@@ -1,5 +1,6 @@
-from pila import Pila
-from cola import Cola
+from picola_pkg.pila import Pila
+from picola_pkg.cola import Cola
+
 
 def main():
     p = Pila[int]()
@@ -46,6 +47,7 @@ def main():
     c.meter(2)
     print(f"Cola: {c}")
     print(f"Tam: {c.devolver_tamanio()}")
+
 
 if __name__ == "__main__":
     main()
